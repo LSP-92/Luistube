@@ -1,0 +1,446 @@
+body{
+    background-color: rgba(22, 21, 21, 0.87);
+}
+
+.header {
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: +99999999;
+}
+
+.navbar{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;  
+    justify-content: space-between;  
+    background-color: rgba(8, 8, 8, 0.938);
+    border-radius: 3px;
+    
+    
+}
+
+#burger-checkbox {
+    display: none;
+}  
+
+/* imagen logo */
+.imagecorp{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar img{
+    padding-top:14px ;
+    height: 45px;
+    width: 45px;
+}
+
+
+
+.navbar .logo{
+    font-size: 35px;
+    font-family: fantasy;
+    vertical-align: middle;
+    padding-right: 1rem;
+    color:rgba(206, 142, 235);
+    text-shadow: -2px 2px 0 rgba(255, 255, 255, 0.856), 
+                 2px 2px 0 rgb(255, 255, 255,  0.856), 
+                 2px -2px 0 rgb(255, 254, 254,  0.856),  
+                -2px -2px 0 rgb(255, 255, 255,  0.856); 
+}
+
+/* fin imagen logo */
+.menu{
+    display: flex;
+    padding-top:23.45px;
+    flex-direction: row-reverse;        
+}
+
+
+.menu a{
+    vertical-align: bottom;
+    color:rgba(206, 142, 235);
+    text-shadow: -0.8px 0.8px 0 #000, 
+                  0.8px 0.8px 0 #000, 
+                  0.8px -0.8px 0 #000, 
+                 -0.8px -0.8px 0 #000; 
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 1rem;
+}
+
+.menu a:hover{
+    color:rgba(238, 28, 28, 0.753);
+}
+
+
+#buscar input{
+    border-radius: 6px;
+    font: 1em sans-serif;
+    margin-left: 2rem;
+}
+
+
+#buscar input:hover{
+   width: 600px;
+}
+
+
+.banner img{
+    padding-top: 60px;
+    padding-right: 14vw;
+    padding-left: 14vw;    
+    width: 70vw;
+    height: 65vh;
+    border-radius: 5px;
+}  
+
+
+.desc{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    
+
+}
+
+.actores{
+    padding-top: 1rem;
+    width: 1800px;
+    background-color: rgba(0, 0, 0, 0.247);    
+}
+
+
+
+.desc .tit, p{
+    padding: 1rem;
+    color: rgba(206, 142, 235);;   
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+
+}    
+
+.desc p{
+    color:whitesmoke;
+}
+.director{
+    padding-top: 1rem;
+    width: 1800px;
+    background-color: rgba(0, 0, 0, 0.247);    
+}
+
+.description{
+    padding-top: 1rem;
+    width: 1800px;
+    background-color: rgba(0, 0, 0, 0.247);    
+}
+
+
+
+/* Catalogo de peliculas */
+
+/*  */
+
+.titulo-flex{
+    width: 100vw;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500; 
+    height: 60px; 
+    background-color: rgba(8, 8, 8, 0.507);
+    color: white;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+
+.flex .novedades{    
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.flex .tsimil{
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.item span{
+    margin: 0.5rem;
+}
+
+.flex img{
+    height: 450px;
+    width: 350px;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.inf{
+    display: none;
+}
+
+.item:hover .inf {    
+    font-size: 23px;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    height: 418px;
+    width: 318px;
+    background-color:  rgba(8, 8, 8, 0.507);
+    border-radius: 10px;
+}
+
+.inf a{
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    font-size: 26px;
+    background-color: rgba(240, 50, 16, 0.781);
+    padding: 0.3rem;
+    position: relative;
+    left: 110px;
+    top:80px;
+    border-radius: 12px;
+}
+
+
+.item:hover img{    
+    display:none;   
+}
+
+
+
+/*Estrellas*/
+.valor input[type="checkbox"]{
+    display: none;
+    
+}
+
+.valor label{
+    font-size: 28px;
+}
+/*5estrellas*/
+#star1:checked ~ #estrella1{color: gold;}
+
+#star1:checked ~ #estrella2{color: gold;}
+
+#star1:checked ~ #estrella3{color: gold;}
+
+#star1:checked ~ #estrella4{color: gold;}
+
+#star1:checked ~ #estrella5{color: gold;}
+
+/* 4 Estrellas*/
+
+
+
+#star2:checked ~ #estrella2{color: gold;}
+
+#star2:checked ~ #estrella3{color: gold;}
+
+#star2:checked ~ #estrella4{color: gold;}
+
+#star2:checked ~ #estrella5{color: gold;}
+
+/* 3 Estrellas*/
+
+
+#star3:checked ~ #estrella3{color: gold;}
+
+#star3:checked ~ #estrella4{color: gold;}
+
+#star3:checked ~ #estrella5{color: gold;}
+
+/* 2 Estrellas*/
+
+
+
+
+#star4:checked ~ #estrella4{color: gold;}
+
+#star4:checked ~ #estrella5{color: gold;}
+
+/* 1 Estrellas*/
+
+
+
+#star5:checked ~ #estrella5{color: gold;}
+
+
+
+/*  */
+/* Pie de pagina */
+.footer {    
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(8, 8, 8, 0.938);
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+
+.footer .link{   
+    
+    padding-left: 2rem;
+    padding-top: 2rem;
+    width: 33%;
+}
+
+.link a{
+    font-size: 22px;
+    padding-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+    padding-top: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.footer .imagecorp{
+    height: 150px;
+    padding-top: 4.5rem;
+}
+
+.footer .social{   
+    padding-right: 2rem;
+    padding-top: 2rem;
+    width: 33%;
+    text-align: right;
+}
+
+
+
+.copy{
+    color:white;
+    text-align: center;
+    background-color: rgba(8, 8, 8, 0.938); ;
+}
+
+/*  */
+/* Media query  */
+
+
+    
+@media (max-width: 1149px) {
+    .burger-label:before {
+        content: '';
+        background-color: darkgray;
+        width: 3em;
+        height: 0.3em;
+        position: absolute;
+        left: 0.5em;
+        top: 1.5em;
+        box-shadow: 0 0.6em 0 0 darkgray, 0 1.2em 0 0 darkgray;
+    }
+
+
+
+    /*Menu nurguer*/
+
+       
+    .menu {
+        display: none;
+        height:70px;
+        width: 100vw;
+    }
+
+    #burger-checkbox:checked ~ .menu{
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        background-color: rgba(8, 8, 8, 0.507);        
+        top: 70px;        
+        opacity: 0.85;
+       
+    }
+    
+    .menu a{
+        height:70px;
+        width: 100vw;
+        margin-top: 1rem;
+        text-align: center;
+    }  
+
+
+   
+    
+    #buscar input{
+        display: none;
+    }
+
+
+    .footer a{
+        font-size: 1rem;
+    }
+ 
+    .footer .imagecorp{
+        display:none;
+    }
+
+     
+}
+
+
+
+@media (max-width: 500px) {
+
+    #burger-checkbox:checked ~ .menu{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: black;        
+        height: 100vh;
+        width: 100vw;
+        left: 2px;             
+        opacity: 1;
+       
+      }
+    .menu a{
+        height:100vh;
+        padding: 0;       
+        text-align: center;
+    }  
+    .banner video{
+        margin-top: 70px;     
+     }
+         
+  .navbar .logo{
+    display: none;
+    }
+
+    .navbar{
+        background-color: rgb(8, 8, 8);
+    }
+
+    .flex img{
+        height: 350px;
+        width: 250px;
+    }    
+    .inf{
+        max-width: 325px;;
+    }
+    .valor{
+        display: none;
+    }
+
+    .inf a{
+        left: 100px;
+    }
+}
